@@ -1,4 +1,4 @@
-<h1>Create new Portfolio item</h1>
+<h1>Edit this Portfolio Item</h1>
 
 <%= form_for(@portfolio_item) do |f| %>
   <div class="field">
@@ -8,10 +8,10 @@
 
   <div class="field">
     <%= f.label :subtitle %>
-    <%= f.text_area :subtitle %>
+    <%= f.text_field :subtitle %>
   </div>
-  
-    <div class="field">
+
+  <div class="field">
     <%= f.label :body %>
     <%= f.text_area :body %>
   </div>
