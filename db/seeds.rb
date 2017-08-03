@@ -58,3 +58,18 @@ puts "10 skill items created"
     )
   end
 puts "9 skill items created"
+
+3.times do |technology|
+  Technology.create!(
+    name: "Technology #{technology}",
+    portfolio_id: Portfolio.last.id
+ )
+end
+
+3.times do |technology|
+  Portfolio.last.technologies.create!(
+    name: "Technology #{technology}"
+  )
+end
+
+puts "3 technologies created one way, 3 more made another way"
