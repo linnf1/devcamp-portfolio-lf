@@ -15,4 +15,9 @@ def source_helper(layout_name)
       content_tag(:p, greeting, class: "sourc-greeting")
        end 
 end
+
+       def copyright_gen
+       LynnViewTool::Renderer.copyright 'Linsey Falkner', 'All rights reserved'
+       end
+
 end
