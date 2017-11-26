@@ -16,7 +16,7 @@
     <%= render 'shared/portfolio_nav' %>
     <!--end nav-->
     <!--start masthead-->
-    <%= render 'shared/portfolio_masthead' %>
+    <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
     <!--end masthead-->
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
