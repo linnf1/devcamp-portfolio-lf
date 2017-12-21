@@ -11,23 +11,36 @@
   </head>
 
   <body>
-<div class="site-wrapper">
-	<div class="site-wrapper-inner">
-		<div class="cover-container">
-
-    <%= render "shared/application_nav" %>
+    <div class="site-wrapper">
+    	<div class="site-wrapper-inner">
+    		<div class="cover-container">
+    		  
+            
+            <%= video_tag(
+              'drive.mp4',
+              id: 'background',
+              autoplay: true,
+              loop: true,
+              muted: true,
+              poster: 'home_bg.png'
+            )
+            %>
+            
+      
+            
+        <%= render "shared/application_nav" %>
+        
+        <%= login_helper 'nav-link' %>
+        
+        <%= yield %>
+        
+        <%= render "shared/application_footer" %>
+        
+        <%= source_helper("application") %>
     
-    <%= login_helper 'nav-link' %>
-    
-    <%= yield %>
-    
-    <%= render "shared/application_footer" %>
-    
-    <%= source_helper("application") %>
-
-		</div>
-	</div>
-</div>
+    		</div>
+    	</div>
+    </div>
 	
   </body>
 </html>
