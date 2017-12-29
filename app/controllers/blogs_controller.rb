@@ -96,7 +96,7 @@ access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:title, :body, :topic_id)
+      params.require(:blog).permit(:title, :body, :topic_id, :status)
     end
     
     def set_sidebar_topics 
