@@ -230,10 +230,19 @@ body {
   color:#6633CC;
 }
 
+.app-card-container {
+  color:black;
+  text-align:left;
+}
 
+.app-card-container > .card {
+  padding: 40px;
+}
 
+.profile-img {
+  border: 6px solid #F0FFFF;
+}
 
-
-
-
-
+.app-card-container a {
+  color: blue;
+}
