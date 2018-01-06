@@ -1,15 +1,100 @@
-<h1>About Me</h1>
+<div class="app-card-container">
+  <div class="card">
+    <h1>About Me</h1>
+    
+    <hr>
+    
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "bizprof1.jpg", width:300, alt:"profile image", class: "profile-img" %>
+           
+        <div class="skills">
+          <% @skills.each do |skill| %>
+          <div class="skill">
+            <h4><%= skill.title %></h4>
+            <div class="progress">
+              <div 
+              class="progress-bar progress-bar-striped bg-warning"
+              role="progressbar"
+              aria-valuenow="<%= skill.percent_utilized %>"
+              aria-valuemax="100"
+              style="width: <%= skill.percent_utilized %>%"
+              ></div>
+            </div>
+          </div>
 
-<hr>
+          <% end %>
+        </div>
+      </div>
 
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag "bizprof1.jpg", width:300, alt:"profile image" %>
-  </div>
-  <div class="col-md-8">
-    <p>A little about myself, My name is Linsey Falkner. I grew up in Abilene TX, I am currently in Fort Worth TX and considering 
-    moving to Austin. Im interested in Graphic Design, and back-end Web Development. 
-</p>
+      
+      <div class="col-md-8">
+        <p>A little about myself, My name is Linsey Falkner. I reside in Fort Worth TX. Some things I enjoy are Web Development and
+        Graphic design. 
+          I am currentlty seeking an internship or starting position for Web Development and am willing to relocate. </p>
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controler="jobHistory"
+          >
+            Job History
+          </button>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            Education
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+          <b>Spectrum</b>
+           Irving, TX
+            May 2017 to Present
+            75063
+            USA
+            (972)877-9978
+           <b> Dispatcher - Tech Support</b>
+            $11.00
+            Answering calls to aid and direct field technicians to jobs, as well as managing workload in a fast paced environment. 
+            </div>
+            <div class="card card-block">
+            <b>Verizon</b>
+            TelVista - Dallas, TX
+            October 2015 to February 2017
+            75234
+            USA
+            (972)919-5738
+            <b>Verizon FiOS Technical Support </b>
+            $10.50
+            <b>Telematics Tier II Technical Support</b>
+            $12.25
+            Computer and Customer service skills to troubleshoot technical issues and avoid unnecessary tech roll-out to location.
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              <b>High School</b>
+              Premier High School - Abilene, TX
+            </div>
+            <div class="card card-block">
+              <b>Web Development</b>
+              Bottega Tech 
+            </div>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
-

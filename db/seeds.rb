@@ -1,6 +1,33 @@
+User.create!(
+  email: "admin@test.com",
+  password: "123456",
+  password_confirmation: "123456",
+  name: "Administrator",
+  roles: "site_admin"
+  )
+  
+puts "1 Admin created"
+
+User.create!(
+  email: "guest@test.com",
+  password: "123456",
+  password_confirmation: "123456",
+  name: "Guest User"
+  )
+  
+puts "1 Guest created"  
+
+
+
 3.times do |topic|
   Topic.create!(
-    title: "Topic #{topic}"
+    title: "Ruby on Rails"
+  )
+  Topic.create!(
+    title: "Angular"
+  )
+  Topic.create!(
+    title: "Javascript"
   )
 end
 puts "3 Topics created"
@@ -20,10 +47,26 @@ puts "3 Topics created"
 end
 puts "10 blog items created"
 
-5.times do |skill|
+1.times do |skill|
   Skill.create!(
-  title: "Rails #{skill}",
-  percent_utilized: 15
+  title: "Technical Support",
+  percent_utilized: 100
+  )
+  Skill.create!(
+  title: "Customer Service",
+  percent_utilized: 93
+  )
+  Skill.create!(
+  title: "Web Development in Ruby on Rails",
+  percent_utilized: 80
+  )
+  Skill.create!(
+  title: "Web Development in Javascript",
+  percent_utilized: 70
+  )
+  Skill.create!(
+  title: "Graphic Design",
+  percent_utilized: 60
   )
   end
   
