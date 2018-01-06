@@ -35,6 +35,10 @@ h6,
 }
 
 
+a {
+  color: #007aa2;
+}
+
 /*
  * Override Bootstrap's default container.
  */
@@ -42,6 +46,7 @@ h6,
 .container {
   max-width: 60rem;
 }
+
 
 
 /*
@@ -122,7 +127,7 @@ h6,
 }
 .sidebar-module-inset {
   padding: 1rem;
-  background-color: #f5f5f5;
+  background-color: #f1eef1;
   border-radius: .25rem;
 }
 .sidebar-module-inset p:last-child,
@@ -202,7 +207,7 @@ h6,
 
 .blog-nav {
   margin-bottom: 30px;
-  background-color: #F0FFFF;
+  background-color: #b5c6e8;
 }
 
 .blog-sidebar-source {

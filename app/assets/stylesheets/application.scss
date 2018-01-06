@@ -224,12 +224,14 @@ h6, .h6 {
 
 .app-footer {
   color: white;
+  margin: 0 auto;
+  text-align: center;
 }
 
 
 
 .tech-news {
-  color:#9933FF;
+  color:#6c7690;
   margin:20px;
   
 }
@@ -239,7 +241,7 @@ h6, .h6 {
 }
 
 .tech-news a{
-  color:#6633CC;
+  color:#ac779d;
 }
 
 .app-card-container {
@@ -248,7 +250,7 @@ h6, .h6 {
 }
 
 .app-card-container > .card {
-  padding: 40px;
+  padding: 2px;
 }
 
 .profile-img {
