@@ -7,7 +7,26 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "bizprof1.jpg", width:300, alt:"profile image", class: "profile-img" %>
+           
+        <div class="skills">
+          <% @skills.each do |skill| %>
+          <div class="skill">
+            <h4><%= skill.title %></h4>
+            <div class="progress">
+              <div 
+              class="progress-bar progress-bar-striped bg-warning"
+              role="progressbar"
+              aria-valuenow="<%= skill.percent_utilized %>"
+              aria-valuemax="100"
+              style="width: <%= skill.percent_utilized %>%"
+              ></div>
+            </div>
+          </div>
+
+          <% end %>
+        </div>
       </div>
+
       
       <div class="col-md-8">
         <p>A little about myself, My name is Linsey Falkner. I grew up in Abilene TX, I am currently in Fort Worth TX and considering 
