@@ -19,7 +19,7 @@ puts "1 Guest created"
 
 
 
-3.times do |topic|
+1.times do |topic|
   Topic.create!(
     title: "Ruby on Rails"
   )
