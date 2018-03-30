@@ -10,8 +10,15 @@
   <div class="blog-body">
     <%= markdown @blog.body %>
   </div>
-
   
+
+  <!--start of image uploader-->
+
+   <%= image_tag @blog.image %>
+  
+   
+   <!--end of image uploader-->
+   
   <%= render 'comments/comment_form' %>
   
   <div id="comments" data-blog-id="<%= @blog.id %>">

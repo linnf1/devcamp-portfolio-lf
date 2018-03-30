@@ -30,8 +30,26 @@
   <div class="form-group">
     <%= f.text_area :body, class: 'form-control', rows: 15, placeholder: "Content" %>
   </div>
+  
+  <!--start of image uploader i added-->
+  
+  <div class="form-group">
+    <%= f.label :image %><br>
+    <%= f.file_field :image %>
+    <% if f.object.image? %>
+      <%= image_tag f.object.image.thumb.url %>
+      <%= f.label :remove_image %>
+      <%= f.check_box :remove_image %> 
+    <% end %>
+  </div>
+
+     
+<!--end of image uploader-->
 
   <div class="form-group">
     <%= f.submit "Submit", class: 'btn, btn-primary' %>
   </div>
+  
+
+  
 <% end %>

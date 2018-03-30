@@ -1,24 +1,5 @@
 # Devcamp Portfolio Application
-#adding test stuff lol
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+**_Portfolio application, this was completed during the Devcamp course._**
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Screenshot](devcamp.png)
