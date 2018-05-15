@@ -113,3 +113,98 @@ footer p {
   bottom: 0;
   background: #836997;
 }
+
+// cubes ->
+
+.cubes {
+	background: #202124;
+}
+
+@keyframes circle {
+	0% {
+		transform: translateY(0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	80% {
+		transform: translateY(-100vh);
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(-100vh);
+	}
+}
+
+@keyframes shadow {
+	0% {
+		transform: scaleY(0);
+	}
+	30% {
+		transform: scaleY(1);
+	}
+	100% {
+		transform: scaleY(.5);
+	}
+}
+
+.shape {
+	position: absolute;
+	width: 66px;
+	height: 66px;
+	animation: circle 5s linear infinite;
+	animation-fill-mode: both;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .10);
+	
+	&::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		height: 360px;
+		transform-origin: top center;
+		animation: inherit;
+		animation-name: shadow;
+	}
+}
+
+.circle {
+	top: calc(100vh - 66px);
+	left: calc(25vw - 66px);
+	background: linear-gradient(45deg, #49E7C2 0%, #7AEC90 100%);
+	border-radius: 100%;
+	
+	&::after {
+		background: linear-gradient(-180deg, rgba(73, 231, 194, .40) 0%, rgba(28, 28, 28, 0) 100%);
+	}
+}
+
+.rectangle {
+	top: calc(100vh - 66px);
+	left: calc(50vw - 66px);
+	background: linear-gradient(45deg, #EA9F45 0%, #F4EE51 100%);
+	animation-delay: 2s;
+	
+	&::after {
+		background: linear-gradient(-180deg, rgba(234, 159, 69, .30) 0%, rgba(28, 28, 28, 0) 100%);
+		top: 100%;
+	}
+}
+
+.triangle {
+	top: calc(100vh - 66px);
+	left: calc(75vw - 66px);
+	background: linear-gradient(45deg, #22A0F9 0%, #71FDC8 100%);
+	clip-path: polygon(0 0, 100% 100%, 100% 0);
+	animation-delay: 1s;
+	
+	&::after {
+		background: linear-gradient(-180deg, rgba(34, 223, 249, .40) 0%, rgba(28, 28, 28, 0) 100%);
+		top: 0;
+		will-change: transform;
+	}
+}
+
