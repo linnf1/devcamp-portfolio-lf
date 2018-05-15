@@ -18,7 +18,7 @@ module ApplicationHelper
   end
   
   def copyright_gen
-     LynnViewTool::Renderer.copyright 'Linsey Falkner', 'All rights reserved'
+     LynnViewTool::Renderer.copyright 'Copyright', 'All rights reserved.'
   end
   
   def nav_items
@@ -28,25 +28,13 @@ module ApplicationHelper
       title: 'Home'
     },
     {
-      url: about_me_path,
-      title: 'About Me'
+      url: portfolios_path,
+      title: 'Info'
     },
     {
       url: contact_path,
       title: 'Contact'
-    },
-    {
-      url: blogs_path,
-      title: 'Blog'
-    },
-    {
-      url: portfolios_path,
-      title: 'Portfolio'
-    },
-    {
-      url: tech_news_path,
-      title: 'Tech News'
-    },
+    }
     ]
   end
   

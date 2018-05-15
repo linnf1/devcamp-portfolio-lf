@@ -31,14 +31,18 @@ a:hover {
 html,
 body {
   height: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
+
 }
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.2);
 }
 
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
     
 h1, .h1,
 h2, .h2,
@@ -46,7 +50,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Capriola', sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -116,7 +120,11 @@ h6, .h6 {
   }
 }
 
+.jumbotron { 
+padding-left: 10px;
+padding-right: 20px;
 
+}
 /*
  * Cover
  */
@@ -135,7 +143,9 @@ h6, .h6 {
  */
 
 .mastfoot {
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.2);
+
+
 }
 
 
@@ -177,8 +187,9 @@ h6, .h6 {
  * Custome Styles
 */
 
-.card-block {
-	color: black;
+.card-block, .app-card-container{
+	color: white;
+	background-color: black;
 	text-align: left;
 	
 }
@@ -244,13 +255,26 @@ h6, .h6 {
   color:#ac779d;
 }
 
+.cent {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
 .app-card-container {
-  color:black;
-  text-align:left;
+  background-color: black;
+  text-align: center;
+  padding: 30px;
 }
 
 .app-card-container > .card {
-  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.transd {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .profile-img {
@@ -271,4 +295,8 @@ h6, .h6 {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 4px;
+}
+
+.high {
+  background-color: rgba(255, 255, 255, 0.5);
 }

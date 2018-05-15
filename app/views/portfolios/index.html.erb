@@ -1,9 +1,27 @@
-<div class="album text-muted">
+<div class="text-muted ">
   <div class="container">
-    <%= source_helper("alert alert-warning") %>
 
     <div class="row <%= "sortable" if logged_in?(:site_admin) %>">
       <%= render partial: 'portfolio_item', collection: @portfolio_items %>
     </div>
+    
+    
   </div>
 </div>
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">Want a qoute?</h1>
+    <p class="lead text-muted">We will get in touch with you quickly and provide an estimate for your particular project.</p>
+    <p>
+
+      <%= link_to 'Request a Qoute', about_me_path, class: 'btn btn-warning' %>
+
+
+    </p>
+  </div>
+</section>
+
+
+
+    <%= source_helper("alert alert-warning") %>
+       <span class="btn btn-outline-dark"> <%= link_to 'Write a New Portfolio', new_portfolio_path if logged_in?(:site_admin) %></span>
