@@ -10,18 +10,15 @@
 </div>
 <section class="jumbotron text-center">
   <div class="container">
-    <h1 class="jumbotron-heading">Want a qoute?</h1>
+    <h1 class="jumbotron-heading">Want a quote?</h1>
     <p class="lead text-muted">We will get in touch with you quickly and provide an estimate for your particular project.</p>
     <p>
 
-      <%= link_to 'Request a Qoute', about_me_path, class: 'btn btn-warning' %>
-
+<p class="btn btn-warning"><a href="mailto:smartifi_inquiry@hotmail.com?subject=PortfolioContact" "email me">Request a Quote</a></p>
 
     </p>
   </div>
 </section>
 
-
-
-    <%= source_helper("alert alert-warning") %>
-       <span class="btn btn-outline-dark"> <%= link_to 'Write a New Portfolio', new_portfolio_path if logged_in?(:site_admin) %></span>
+<%= source_helper("alert alert-warning") %>
+<span class="btn btn-outline-dark"> <%= link_to 'Write a New Portfolio', new_portfolio_path if logged_in?(:site_admin) %></span>

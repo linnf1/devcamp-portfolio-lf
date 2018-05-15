@@ -1,5 +1,5 @@
-# Devcamp Portfolio Application
+# Smartifi
 
-**_Portfolio application, this was completed during the Devcamp course._**
+**_Smartifi Website.. WIP._**
 
 ![Screenshot](devcamp.png)

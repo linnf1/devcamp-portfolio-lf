@@ -31,10 +31,6 @@ module ApplicationHelper
       url: portfolios_path,
       title: 'Info'
     },
-    {
-      url: contact_path,
-      title: 'Contact'
-    }
     ]
   end
   
