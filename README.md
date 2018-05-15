@@ -2,4 +2,4 @@
 
 **_Smartifi Website.. WIP._**
 
-![Screenshot](devcamp.png)
+![Screenshot](prev.png)
