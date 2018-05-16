@@ -4,7 +4,9 @@
     <p class="card-text">
       <span><h3><%= portfolio_item.title %></h3></span> <%= portfolio_item.subtitle %>
     </p>
+    
+        
+ <span><%= link_to "Show", portfolio_show_path(portfolio_item) if logged_in?(:site_admin) %></h2></span> 
   </div>
 </div>
 
-<!-- %= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></h2></span> %= portfolio_item.subtitle %>-->
