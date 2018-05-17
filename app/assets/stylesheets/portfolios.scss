@@ -6,16 +6,21 @@
 body {
 	height:120%;
 	margin:0;
-	background:url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cartographer.png);}
+	background: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cartographer.png');
+	}
 
-
+.card-text1, p {
+  font-size: 1.3em;
+}
 
 a:link {
   text-decoration: none;
   color: black;
 }
 
-
+.mail {
+	max-width: 30px;
+}
 .text-grey { 
 	color: #E8E8E8;
 }
