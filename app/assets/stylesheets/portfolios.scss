@@ -1,15 +1,28 @@
 @import "bootstrap";
 @import "jquery-ui";
 @import "gritter";
-@import url('https://fonts.googleapis.com/css?family=Quicksand|Capriola|Fira+Sans');
-
+@import url('https://fonts.googleapis.com/css?family=Capriola|Source+Sans+Pro|Fira+Sans');
 body {
 	height:120%;
 	margin:0;
 	background: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cartographer.png');
-	}
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.08em;
 
-.card-text1, p {
+	}
+    
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Capriola', sans-serif;
+}
+p {
+  font-size: 1.16em;
+}
+.card-text1 {
   font-size: 1.3em;
 }
 

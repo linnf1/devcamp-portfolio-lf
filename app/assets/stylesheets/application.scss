@@ -4,7 +4,10 @@
 /*
  * Globals
  */
-
+img {
+   text-shadow: 0 .05rem .1rem rgba(0,0,0,.2);
+ 
+}
 /* Links */
 a,
 a:focus,
@@ -35,6 +38,7 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.2);
+  
 }
 
     
@@ -47,6 +51,11 @@ h6, .h6 {
   font-family: 'Capriola', sans-serif;
 }
 
+.lead1 {
+  padding: 5px;
+  font-size: 1.3em;
+
+}
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;

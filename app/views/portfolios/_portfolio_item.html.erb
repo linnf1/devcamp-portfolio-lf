@@ -1,9 +1,9 @@
 <div class="col-md-6">
-  <div class="card bg-dark" data-id="<%= portfolio_item.id %>">
+  <div class="card bg-dark  text-center" data-id="<%= portfolio_item.id %>">
     <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb'), width: '100%' %>
-    <p class="card-text1">
-      <span><h3 class="text-grey "><%= portfolio_item.title %></h3></span> <%= portfolio_item.subtitle %>
-    </p>
+
+      <span><h3 class="text-grey "><%= portfolio_item.title %></h3></span><p><%= portfolio_item.subtitle %></p>
+
     
         
  <span><%= link_to "Show", portfolio_show_path(portfolio_item) if logged_in?(:site_admin) %></h2></span> 
