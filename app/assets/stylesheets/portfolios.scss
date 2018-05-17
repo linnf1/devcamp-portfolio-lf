@@ -1,26 +1,13 @@
 @import "bootstrap";
 @import "jquery-ui";
 @import "gritter";
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Capriola|Fira+Sans');
 
-@font-face {
-  font-family:'Raleway', sans-serif;
-  src:font-url('Raleway-Regular.ttf');
-}
-@font-face {
-  font-family: 'Quicksand', sans-serif;
-  src:font-url('Quicksand-Bold.ttf')
-}
+body {
+	height:120%;
+	margin:0;
+	background:url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cartographer.png);}
 
-html,body {height:120%;margin:0;background:url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cartographer.png);font-family:arial;}
-.parallax {
-  width:100%;
-  height:30%;
-  background: url(http://lorempixel.com/1000/700/nature/);
-  background-position:center center;
-  background-size:cover;
-  box-shadow:0 1px 0 black,0 2px 0 rgba(255,255,255,0.15);
-  position:relative;
-}
 
 
 a:link {
@@ -29,9 +16,8 @@ a:link {
 }
 
 
-body {
-  font-family:'Raleway', sans-serif;
-  min-height: 95rem; /* Can be removed; just added for demo purposes */
+.text-grey { 
+	color: #E8E8E8;
 }
 
 .navbar {
@@ -63,21 +49,8 @@ body {
   background-color: #f7f7f7;
 }
 
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
-}
+    
+
 
 .card {
   float: center;
